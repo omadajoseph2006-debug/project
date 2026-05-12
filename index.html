@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .container {
+        max-width: 450px;
+        width: 100%;
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      input[type="text"], input[type="email"], input[type="password"], textarea, select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-family: inherit;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      }
+      input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        background-color: #f8f9ff;
+      }
+      .radio-group, .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      input[type="radio"], input[type="checkbox"] {
+        margin-right: 8px;
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+      }
+      .radio-group label, .checkbox-group label {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 0;
+        font-weight: normal;
+        color: #555;
+      }
+      .button-group {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+      }
+      input[type="submit"], input[type="reset"], .next-btn {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      input[type="submit"] {
+        background: #667eea;
+        color: #fff;
+      }
+      input[type="submit"]:hover {
+        background: #5568d3;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+      }
+      input[type="reset"] {
+        background: #e9ecef;
+        color: #555;
+      }
+      input[type="reset"]:hover {
+        background: #dee2e6;
+      }
+      .next-btn {
+        background: #764ba2;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .next-btn:hover {
+        background: #6a3d8e;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Login Form</h1>
+    
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" SIZE="30">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label>Choice:</label>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="choice" value="yes">
+                <label for="yes" style="display: inline; font-weight: normal;">Yes</label>
+                <br>
+                <input type="radio" id="no" name="choice" value="no">
+                <label for="no" style="display: inline; font-weight: normal;">No</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Interests:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports" style="display: inline; font-weight: normal;">Sports</label>
+                <br>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music" style="display: inline; font-weight: normal;">Music</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" COLS="40" ROWS="4" placeholder="Enter your comments here"></textarea>
+        </div>
+
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+            <a href="lists-table.html" class="next-btn">Next</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

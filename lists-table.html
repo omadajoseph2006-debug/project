@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Tables</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      }
+      h2 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #667eea;
+      }
+      h3 {
+        color: #667eea;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      ul li, ol li {
+        color: #555;
+        margin: 10px 0;
+        line-height: 1.6;
+      }
+      dl dt {
+        font-weight: 600;
+        color: #333;
+        margin-top: 15px;
+      }
+      dl dd {
+        margin-left: 20px;
+        color: #666;
+        line-height: 1.6;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background: #667eea;
+        color: #fff;
+        font-weight: 600;
+      }
+      tbody tr {
+        transition: background-color 0.3s ease;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9ff;
+      }
+      tbody tr:hover {
+        background-color: #e9ecff;
+      }
+      .back-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #667eea;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+      }
+      .back-btn:hover {
+        background: #5568d3;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 30px;
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+  <h2>Days of the Week</h2>
+  <ul type="square">
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+      <li>Friday</li>
+      <li>Saturday</li>
+      <li>Sunday</li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>Months of the Year</h2>
+  <ol type="i">
+      <li>January</li>
+      <li>February</li>
+      <li>March</li>
+      <li>April</li>
+      <li>May</li>
+      <li>June</li>
+      <li>July</li>
+      <li>August</li>
+      <li>September</li>
+      <li>October</li>
+      <li>November</li>
+      <li>December</li>
+  </ol>
+</div>
+
+<div class="container">
+  <h2>Seasons</h2>
+  <dl>
+      <dt>Spring</dt>
+      <dd>First season of the year: March - May</dd>
+      <dt>Summer</dt>
+      <dd>Second season of the year: June - August</dd>
+      <dt>Autumn</dt>
+      <dd>Third season of the year: September - November</dd>
+      <dt>Winter</dt>
+      <dd>Fourth season of the year: December - February</dd>
+  </dl>
+</div>
+
+<div class="container">
+  <h2>Sample Data Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Occupation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alice</td>
+        <td>30</td>
+        <td>New York</td>
+        <td>Engineer</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>25</td>
+        <td>Los Angeles</td>
+        <td>Designer</td>
+      </tr>
+      <tr>
+        <td>Charlie</td>
+        <td>35</td>
+        <td>Chicago</td>
+        <td>Manager</td>
+      </tr>
+      <tr>
+        <td>Diana</td>
+        <td>28</td>
+        <td>Houston</td>
+        <td>Developer</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>32</td>
+        <td>Phoenix</td>
+        <td>Analyst</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="button-container">
+  <a href="index.html" class="back-btn">← Back to Form</a>
+</div>
+</body>
+</html>
